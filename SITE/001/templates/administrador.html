@@ -15,7 +15,7 @@
             {{mensagens[0]}}
         </div>
     {% endif %}
-        <h1 class="titulo">admin istrador</h1>
+        <h1 class="titulo">Administrador</h1>
     
     <div id="form_fundo">
         <h1>CADASTRAR USUARIO</h1>
@@ -61,6 +61,14 @@
         </div>
     </div>
 
-
+    <div id="form_fundo" class="upload">
+        <h1>ENVIAR ARQUIVOS</h1>
+        <div id="form_frente" class="upload">
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <input type="file" name="documento" id="documento"><br><br><br>
+                <button type="submit">ENVIAR</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
